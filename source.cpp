@@ -4,7 +4,7 @@
 #include <iostream>
 
 BitSet::BitSet(int index) {
-	ptr = new unsigned long[index];	
+	ptr = new unsigned long[(index + 31) / 32];	
 }
 
 BitSet::~BitSet() {
