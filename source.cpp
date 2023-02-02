@@ -3,7 +3,7 @@
 
 
 BitSet::BitSet(int index) {
-	ptr = new unsigned long[(index + 31) / 32];	
+	ptr = new unsigned long[(index + 63) / 64];	
 }
 
 BitSet::~BitSet() {
