@@ -1,5 +1,4 @@
 #include "BitSet.h"
-#include <iostream>
 
 
 BitSet::BitSet(int index) {
