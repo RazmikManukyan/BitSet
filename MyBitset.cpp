@@ -97,37 +97,3 @@ public:
          return result;
      }
 };
-
-int main() {
-    MyBitset<10> myBitset;
-    myBitset.set(2, true);
-    myBitset.set(5, true);
-    myBitset.set(8, true);
-
-    std::cout << "Bitset: ";
-    for(int i = 9; i >=0; --i) {
-        std::cout << myBitset.get(i);
-    }
-
-    std::cout << std::endl;
-
-    std::cout << "Number of set bits: " << myBitset.count() << std::endl;
-
-    myBitset.flip();
-
-    std::cout << "Flipped Bitset: ";
-    for (int i = 9; i >= 0; --i) {
-        std::cout << myBitset.get(i);
-    }
-    std::cout << std::endl;
-
-    myBitset.reset();
-
-    std::cout << "Reset Bitset: ";
-    for (int i = 9; i >= 0; --i) {
-        std::cout << myBitset.get(i);
-    }
-    std::cout << std::endl;
-
-    return 0;
-}
