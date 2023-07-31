@@ -1,6 +1,4 @@
 # BitSet
-Sure! Below is a sample README file that you can use for your `MyBitset` code on GitHub:
-
 ```
 # MyBitset
 
